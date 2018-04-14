@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - cara melihat jumlah postingan blog orang</title>
+  
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <style>
+      body {
+  margin:2px;
+  padding: 1px;
+}
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <form method="post" name="form1">
+<textarea name="code" onclick="focus(this.code)" style="border: solid 1px #099; box-shadow: 5px 5px 5px #ddd; color: black; font-family: Courier New, Monospace, Courier; font-size: 14px; font-weight: normal; height: 170px; margin: 0px; padding: 5px; scroll: auto; width: 100%;"><center style="background:green;width:100%;height:100%;">
+<script style="text/javascript">     function showpostcount(json) {     document.write('<span style="color:white;">Jumlah Posting :</span> <b style="color: yellow;">' + parseInt(json.feed.openSearch$totalResults.$t,10)     + '</b><br>');}</script>     <script src="https://www.ayudadeblogger.com/feeds/posts/default?alt=json-in-script&callback=showpostcount"></script><script style="text/javascript"></script>     <script style="text/javascript">     function numberOfComments(json) {     document.write('<span style="color:white;">Jumlah Komentar :</span> <b style="color: yellow;">' + json.feed.openSearch$totalResults.$t +     '</b><br>');}</script>     <script src="https://www.ayudadeblogger.com/feeds/comments/default?alt=json-in-script&callback=numberOfComments"></script></center>
+</textarea></form>
+<button onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()" style="background: #286cba;border:solid 0px;color:#fff;border-radius:4px;float-center:0;">Preview</button>   <button onclick="window.document.form1.code.value='';preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()"style="background: #d3171a;border:solid 0px;color:#fff;border-radius:4px;">Clear </button>
+<br />
+<br />
+<iframe frameborder="0" name="preview" src="about:blank" style="background: #ffffff; border: solid 1px #099; box-shadow: 5px 5px 5px #ddd; height: 80%; padding: 5px; width: 100%;"></iframe></div>
+<br />
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+  
+  
+  
+
+</body>
+
+</html>
+ 
